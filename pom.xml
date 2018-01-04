@@ -12,7 +12,6 @@
         <module>study-netty</module>
         <module>study-algorithm</module>
         <module>study-spring</module>
-        <module>study-design-pattern</module>
         <module>study-aop</module>
         <module>study-thread</module>
         <module>study-spring</module>
@@ -21,6 +20,7 @@
         <module>study-activemq</module>
         <module>study-rabbitmq</module>
         <module>study-webservice</module>
+        <module>study-datastruct</module>
     </modules>
 
 
