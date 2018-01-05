@@ -2,10 +2,6 @@ package cn.yefan.algorithm.sort;
 
 /**
  * 快速排序
- * <p>
- * <p>
- * 快速排序
- * </p>
  *
  * @author yefan
  * @date 2017/12/30
@@ -19,6 +15,14 @@ public class QuickSortSolution {
         int index = partition(array, lo, hi);
         quickSort(array, lo, index - 1);
         quickSort(array, index + 1, hi);
+        printData(array);
+    }
+
+    void printData(int[] array) {
+        for (int i = 0; i < array.length; i++) {
+            System.out.print(array[i] + "\t");
+        }
+        System.out.println();
     }
 
     private int partition(int[] array, int lo, int hi) {
@@ -42,11 +46,10 @@ public class QuickSortSolution {
 
     public static void main(String[] args) {
         QuickSortSolution solution = new QuickSortSolution();
-        int[] array = {6, 3, 7, 4, 1};
+        int[] array = {2, 1, 4, 3, 8, 5, 10, 9};
         solution.quickSort(array, 0, array.length - 1);
-        for (int i = 0; i < array.length; i++) {
-            System.out.print(array[i] + " ");
-        }
+        System.out.println("排序后的数组： ");
+        solution.printData(array);
     }
 
 }
